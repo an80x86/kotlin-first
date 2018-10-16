@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="updateInterval">
+        <item name="1000">Every 1 second</item>
+        <item name="5000">Every 5 seconds</item>
+        <item name="30000">Every 30 seconds</item>
+        <item name="60000">Every 1 minute</item>
+        <item name="300000">Every 5 minutes</item>
+    </string-array>
+    <string-array name="updateIntervalValues">
+        <item name="1000">1000</item>
+        <item name="5000">5000</item>
+        <item name="30000">30000</item>
+        <item name="60000">60000</item>
+        <item name="300000">300000</item>
+    </string-array>
+    <string-array name="barkodmalzeme">
+        <item name="barkod">Barkod</item>
+        <item name="malzeme">Malzeme</item>
+    </string-array>
+    <string-array name="carikoducariadi">
+        <item name="carikod">Cari Kodu</item>
+        <item name="cariad">Cari Adı</item>
+    </string-array>
+    <string-array name="kodad">
+        <item name="kod">Kod</item>
+        <item name="ad">Ad</item>
+    </string-array>
+    <string-array name="kodadsoyad">
+        <item name="kod">Kod</item>
+        <item name="ad">Ad</item>
+        <item name="soyad">Soyad</item>
+    </string-array>
+    <string-array name="kalitedurumlari">
+        <item name="UYGUNDEGIL">UYGUN DEĞİL</item>
+        <item name="UYGUN">UYGUN</item>
+    </string-array>
+    <string-array name="UretimMenuItems">
+        <item name="SistemLoglari">Sistem Loglari</item>
+        <item name="UretimParametreleri">Uretim Parametreleri</item>
+        <item name="IscilikKaydi">Iscilik Kaydi</item>
+        <item name="DurusKaydi">Duruş Kaydı</item>
+        <item name="HurdaKaydi">Hurda Kaydi</item>
+        <item name="AletAparatKaydi">Alet Aparat Kaydi</item>
+        <item name="UretimIptal">Üretim İptal</item>
+        <item name="Kapat">Kapat</item>
+        <item name="Iptal">İptal</item>
+    </string-array>
+
+</resources>

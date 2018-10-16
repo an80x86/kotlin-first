@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OrsRulman</string>
+    <string name="title_activity_login">Giris</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Kullanıcı Kodu</string>
+    <string name="prompt_password">Şifre</string>
+    <string name="action_sign_in">Oturum aç</string>
+    <string name="action_sign_in_short">Oturum aç</string>
+    <string name="error_invalid_email">Bu e-posta adresi geçersiz</string>
+    <string name="error_invalid_password">Bu şifre çok kısa</string>
+    <string name="error_incorrect_password">Bu şifre yanlış</string>
+    <string name="error_field_required">Bu alan gereklidir</string>
+    <string name="permission_rationale">"E-posta tamamlamaları sağlamak için kişi izinleri gereklidir."</string>
+</resources>

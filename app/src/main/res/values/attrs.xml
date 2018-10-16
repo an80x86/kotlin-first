@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MikrobarButon">
+        <attr name="TextUzaklik" format="integer" />
+        <attr name="OtomatikKapat" format="boolean" />
+        <attr name="ButtonType" format="enum">
+            <enum name="Update" value="0" />
+            <enum name="Save" value="1" />
+            <enum name="Delete" value="2" />
+            <enum name="Print" value="3" />
+            <enum name="Cancel" value="4" />
+            <enum name="Close" value="5" />
+            <enum name="Next" value="6" />
+            <enum name="Find" value="7" />
+            <enum name="Back" value="8" />
+            <enum name="OK" value="9" />
+            <enum name="Question" value="10" />
+            <enum name="Information" value="11" />
+            <enum name="Other" value="12" />
+            <enum name="Barcode" value="13" />
+            <enum name="Package" value="14" />
+            <enum name="Add" value="15" />
+            <enum name="Excel" value="16" />
+            <enum name="AddSmall" value="17" />
+            <enum name="SaveSmall" value="18" />
+            <enum name="Basket" value="19" />
+            <enum name="BasketSmall" value="20" />
+            <enum name="Search" value="21" />
+            <enum name="SearchSmall" value="22" />
+            <enum name="DeleteSmall" value="23" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MikrobarCombo">
+        <attr name="labelWidth" format="integer" />
+        <attr name="showLabel" format="boolean" />
+        <attr name="history" format="boolean" />
+        <attr name="labelText" format="string" />
+        <attr name="comboSourceValues" format="string" />
+        <attr name="comboSource" format="enum">
+            <enum name="ArrayList" value="0" />
+            <enum name="Vardiyalar" value="1" />
+            <enum name="Departmanlar" value="2" />
+            <enum name="KontrolSebebpleri" value="3" />
+            <enum name="PaketlemeBilgileri" value="4" />
+            <enum name="PartiKodlari" value="5" />
+            <enum name="YaziciTasarimList" value="6" />
+            <enum name="AmbalajTur" value="7" />
+            <enum name="Siparisler" value="8" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,562 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/relative_seriliuretimgiris"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#ffa"
+                android:gravity="fill"
+                android:isScrollContainer="false"
+                android:scrollbars="vertical" >
+
+
+    <!-- Login progress -->
+    <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"/>
+
+    <!-- tablo ornekleri http://blog.intelligenia.com/2012/02/programacion-movil-en-android.html#more -->
+    <!-- Barkod alanı genel barkod okutmak için ekranın tepesinde -->
+    <EditText
+            android:id="@+id/text_serilibarkod_activity_seriliuretimgiris"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/TextView_layout_height"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button_ileri_activity_seriliuretimgiris"
+            android:layout_toRightOf="@+id/button_geri_activity_seriliuretimgiris"
+            android:hint="Barkod Okutunuz"
+            android:singleLine="true"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/TextView_textSize" >
+
+        <requestFocus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </EditText>
+
+    <Button
+            android:id="@+id/button_geri_activity_seriliuretimgiris"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="G"
+            android:textSize="36sp"
+            android:background="@drawable/btn_shape_capsule"
+            android:textColor="@drawable/btn_txt_selector"
+            android:textStyle="bold"/>
+
+    <Button
+            android:id="@+id/button_ileri_activity_seriliuretimgiris"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/boslukkkk"
+            android:text="i"
+            android:layout_marginTop="20dp"
+            android:textSize="36sp"
+            android:background="@drawable/btn_shape_capsule"
+            android:textColor="@drawable/btn_txt_selector"
+            android:textStyle="bold" />
+
+    <TextView android:layout_width="wrap_content" android:id="@+id/boslukkkk" android:layout_height="wrap_content" android:text=" "
+              android:layout_toLeftOf="@+id/button_kapat_activity_seriliuretimgiris"/>
+
+    <Button
+            android:id="@+id/button_kapat_activity_seriliuretimgiris"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:text="M"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="36sp"
+            android:background="@drawable/btn_shape_capsule"
+            android:textColor="@drawable/btn_txt_selector"
+            android:textStyle="bold" />
+
+    <!-- Kaydırma çubuğu başlangıcı -->
+    <!-- Kaydırma çubuğu bitişi -->
+
+    <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/text_serilibarkod_activity_seriliuretimgiris" >
+
+        <RelativeLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+            <LinearLayout
+                    android:id="@+id/LinearLayout_scroll_seriliuretimgiris"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                <!-- istasyon -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/edit_istasyonkod_activity_seriliuretimgiris"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight="1"
+                            android:hint="İstasyon Kod"
+                            android:focusableInTouchMode="false"
+                            android:inputType="text"
+                            android:textSize="@dimen/TextView_textSize" />
+
+                    <Button
+                            android:id="@+id/button_istasyonbul_activity_seriliuretimgiris"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="..."
+                            android:textSize="36sp"
+                            android:background="@drawable/btn_shape_capsule"
+                            android:textColor="@drawable/btn_txt_selector"
+                            android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- istasyon ad -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/edit_istasyonad_activity_seriliuretimgiris"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight="1"
+                            android:hint="İstasyon Ad"
+                            android:focusableInTouchMode="false"
+                            android:inputType="text"
+                            android:textSize="@dimen/TextView_textSize" />
+                </LinearLayout>
+
+                <!-- is emri -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/edit_isemrino_activity_seriliuretimgiris"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight="1"
+                            android:focusableInTouchMode="false"
+                            android:inputType="text"
+                            android:hint="İş Emri"
+                            android:textSize="@dimen/TextView_textSize" />
+
+                    <Button
+                            android:id="@+id/button_isemribul_activity_seriliuretimgiris"
+                            android:layout_width="@dimen/Button_big_height"
+                            android:layout_height="@dimen/Button_big_height"
+                            android:layout_gravity="center_horizontal"
+                            android:text="..."
+                            android:textSize="36sp"
+                            android:background="@drawable/btn_shape_capsule"
+                            android:textColor="@drawable/btn_txt_selector"
+                            android:textStyle="bold" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" "/>
+
+                    <Button
+                            android:id="@+id/button_isemri_detay_goster"
+                            android:layout_width="@dimen/Button_big_height"
+                            android:layout_height="@dimen/Button_big_height"
+                            android:layout_gravity="center_horizontal"
+                            android:text="..."
+                            android:textSize="36sp"
+                            android:background="@drawable/btn_shape_capsule"
+                            android:textColor="@drawable/btn_txt_selector"
+                            android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- stok kod -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/edit_stokkod_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight="1"
+                            android:hint="Stok Kod"
+                            android:focusableInTouchMode="false"
+                            android:inputType="text"
+                            android:textSize="@dimen/TextView_textSize" />
+
+                </LinearLayout>
+
+                <!-- stok ad -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/edit_stokad_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight="1"
+                            android:hint="Stok Ad"
+                            android:focusableInTouchMode="false"
+                            android:inputType="text"
+                            android:textSize="@dimen/TextView_textSize" />
+                </LinearLayout>
+
+                <!-- operasyon -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/edit_operasyon_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight="1"
+                            android:text="Operasyon"
+                            android:focusableInTouchMode="false"
+                            android:inputType="text"
+                            android:textSize="@dimen/TextView_textSize" />
+
+                    <Button
+                            android:id="@+id/button_operasyonbul_activity_seriliuretimgiris"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="..."
+                            android:textSize="36sp"
+                            android:background="@drawable/btn_shape_capsule"
+                            android:textColor="@drawable/btn_txt_selector"
+                            android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- boş alan çizgi  -->
+                <View
+                        android:id="@+id/view10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:background="#EA0F37" />
+
+                <!-- üretilen / planlanan -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal"
+                        android:visibility="visible" >
+
+                    <EditText
+                            android:id="@+id/edit_uretilen_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight=".5"
+                            android:hint="Üretilen"
+                            android:inputType="numberDecimal"
+                            android:textSize="@dimen/TextView_textSize" />
+
+                    <!-- planlanan -->
+                    <EditText
+                            android:id="@+id/edit_planlanan"
+                            android:layout_width="0dip"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight=".5"
+                            android:hint="Planlanan"
+                            android:inputType="numberSigned"
+                            android:textSize="@dimen/TextView_textSize" />
+
+                </LinearLayout>
+
+                <View
+                        android:id="@+id/view1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:background="#EA0F37"
+                        android:visibility="gone" />
+
+                <LinearLayout
+                        android:id="@+id/LinearLayout_isemridetay_seriliuretimgiris"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                    <View
+                            android:id="@+id/view11"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dip"
+                            android:background="#EA0F37" />
+
+                    <TableLayout
+                            android:id="@+id/TableLayout_isemridetayview_seriliuretimgiris"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+                    </TableLayout>
+
+                    <View
+                            android:id="@+id/view12"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dip"
+                            android:background="#EA0F37" />
+                </LinearLayout>
+
+                <!-- operator -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_operator_seriliuretimgiris"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/edit_operator_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight="1"
+                            android:hint="Operatör"
+                            android:focusableInTouchMode="false"
+                            android:inputType="text"
+                            android:textSize="@dimen/TextView_textSize" />
+                </LinearLayout>
+
+                <!-- açıklama -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <EditText
+                            android:id="@+id/edit_aciklama_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/TextView_layout_height"
+                            android:layout_weight="1"
+                            android:hint="Açıklama"
+                            android:inputType="text"
+                            android:textSize="@dimen/TextView_textSize" />
+                </LinearLayout>
+
+                <View
+                        android:id="@+id/View02"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:background="#EA0F37" />
+
+                <!-- kopya -->
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <Button
+                            android:id="@+id/button_baslat_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/Button_layout_height"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="Başlat"
+                            android:textSize="36sp"
+                            android:background="@drawable/btn_shape_capsule"
+                            android:textColor="@drawable/btn_txt_selector"
+                            android:textStyle="bold" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" "/>
+
+                    <Button
+                            android:id="@+id/button_bitir_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/Button_layout_height"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="Bitir"
+                            android:textSize="36sp"
+                            android:background="@drawable/btn_shape_capsule"
+                            android:textColor="@drawable/btn_txt_selector"
+                            android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="@dimen/linear_marginTop"
+                        android:orientation="horizontal" >
+
+                    <Button
+                            android:id="@+id/button_uretimiscilik_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/Button_layout_height"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="İşçilik"
+                            android:textSize="36sp"
+                            android:background="@drawable/btn_shape_capsule"
+                            android:textColor="@drawable/btn_txt_selector"
+                            android:textStyle="bold" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" "/>
+
+                    <Button
+                            android:id="@+id/button_uretimdurus_activity_seriliuretimgiris"
+                            android:layout_width="1dp"
+                            android:layout_height="@dimen/Button_layout_height"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="Duruş"
+                            android:textSize="36sp"
+                            android:background="@drawable/btn_shape_capsule"
+                            android:textColor="@drawable/btn_txt_selector"
+                            android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/LinearLayout_istasyon_seriliuretimgiris12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                    <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                        <ImageView
+                                android:id="@+id/image_firmalogo"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="#FFFEFE"
+                                android:src="@drawable/logo" />
+
+                        <TextView
+                                android:id="@+id/Text_DURUM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignTop="@+id/image_firmalogo"
+                                android:maxHeight="40dp"
+                                android:maxWidth="250dp"
+                                android:shadowDx="3.0"
+                                android:shadowDy="3.0"
+                                android:shadowRadius="3.0"
+                                android:text="..."
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#840303" />
+
+                        <DigitalClock
+                                android:id="@+id/digitalClock1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignTop="@+id/image_firmalogo"
+                                android:shadowRadius="3.0"
+                                android:text="DigitalClock"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#840303" />
+
+                        <TextView
+                                android:id="@+id/text_versiyontext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:textColor="#840303" />
+
+                        <TextView
+                                android:id="@+id/text_timer_activity_seriliuretimgiris"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_alignLeft="@+id/digitalClock1"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/digitalClock1"
+                                android:gravity="top"
+                                android:maxHeight="40dp"
+                                android:maxWidth="120dp"
+                                android:shadowColor="#4505A6"
+                                android:shadowDx="3.0"
+                                android:shadowDy="3.0"
+                                android:shadowRadius="3.0"
+                                android:text="Time"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#840303" />
+
+                        <TextView
+                                android:id="@+id/text_timer2_activity_seriliuretimgiris"
+                                android:layout_width="wrap_content"
+                                android:layout_height="81dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toLeftOf="@+id/digitalClock1"
+                                android:gravity="top"
+                                android:maxHeight="40dp"
+                                android:maxWidth="120dp"
+                                android:shadowColor="#4505A6"
+                                android:shadowDx="3.0"
+                                android:shadowDy="3.0"
+                                android:shadowRadius="3.0"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="#840303" />
+
+                        <TextView
+                                android:id="@+id/texthurda"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_below="@+id/image_firmalogo"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#840303" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

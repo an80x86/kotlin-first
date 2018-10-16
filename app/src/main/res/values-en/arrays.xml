@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="updateInterval">
+        <item name="1000">Every 1 second</item>
+        <item name="5000">Every 5 seconds</item>
+        <item name="30000">Every 30 seconds</item>
+        <item name="60000">Every 1 minute</item>
+        <item name="300000">Every 5 minutes</item>
+    </string-array>
+    <string-array name="updateIntervalValues">
+        <item name="1000">1000</item>
+        <item name="5000">5000</item>
+        <item name="30000">30000</item>
+        <item name="60000">60000</item>
+        <item name="300000">300000</item>
+    </string-array>
+    <string-array name="barkodmalzeme">
+        <item name="barkod">Barcode</item>
+        <item name="malzeme">Stock</item>
+    </string-array>
+    <string-array name="carikoducariadi">
+        <item name="carikod">Current Code</item>
+        <item name="cariad">Current Name</item>
+    </string-array>
+    <string-array name="kodad">
+        <item name="kod">Code</item>
+        <item name="ad">Name</item>
+    </string-array>
+    <string-array name="kodadsoyad">
+        <item name="kod">Code</item>
+        <item name="ad">Name</item>
+        <item name="soyad">Surname</item>
+    </string-array>
+    <string-array name="kalitedurumlari">
+        <item name="UYGUNDEGIL">NOT PROPER</item>
+        <item name="UYGUN">PROPER</item>        
+    </string-array>
+    <string-array name="UretimMenuItems">
+        <item name="SistemLoglari">System Logs</item>
+        <item name="UretimParametreleri">Production Parameters</item>
+        <item name="IscilikKaydi">Registration Workmanship</item>
+        <item name="DurusKaydi">Stopping Recording</item>
+        <item name="HurdaKaydi">Scrap Recording</item>
+        <item name="AletAparatKaydi">Tools Recording Apparatus</item>
+        <item name="UretimIptal">Cancel Production</item>
+        <item name="Kapat">Close</item>
+        <item name="Iptal">Cancel</item>
+    </string-array>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</resources>
